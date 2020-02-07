@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <title>外壁熱負荷</title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <script src="script.js" defer></script>
+ </head>
+ 
+ <body>
+ 
+  <div>
+   <h1>断熱性の評価</h1>
+  </div>
+  
+   <h2>1.1 外壁構成</h2>
+	<p>
+	 <table border=1>
+	 <tr style="background-color:#ffcccc"><td></td><td>外壁材質</td><td>外壁厚さ[mm]</td></tr>
+	 
+	 <tr><td>①</td>
+	 <td><select id="material1">
+	 <option value="木材">木材</option>
+	 <option value="コンクリート">コンクリート</option>
+	 <option value="グラスウール">グラスウール</option>
+	 <option value="空気層">空気層</option>
+	 <option value="モルタル">モルタル</option>
+	 </select></td>
+	 <td><form action="#" method="post">
+	 <p><input type="text" id="depth1"></p></form></td></tr>
+	 
+	 <tr><td>②</td>
+	 <td><select id="material2">
+	 <option value="木材">木材</option>
+	 <option value="コンクリート">コンクリート</option>
+	 <option value="グラスウール">グラスウール</option>
+	 <option value="空気層">空気層</option>
+	 <option value="モルタル">モルタル</option>
+	 </select></td><td><form action="#" method="post">
+	 <p><input type="text" id="depth2"></p></form></td></tr>
+	 
+	 <tr><td>③</td>
+	 <td><select id="material3">
+	 <option value="木材">木材</option>
+	 <option value="コンクリート">コンクリート</option>
+	 <option value="グラスウール">グラスウール</option>
+	 <option value="空気層">空気層</option>
+	 <option value="モルタル">モルタル</option>
+	 </select></td><td><form action="#" method="post">
+	 <p><input type="text" id="depth3"></p></form></td></tr>
+	 
+	 <tr><td>④</td>
+	 <td><select id="material4">
+	 <option value="木材">木材</option>
+	 <option value="コンクリート">コンクリート</option>
+	 <option value="グラスウール">グラスウール</option>
+	 <option value="空気層">空気層</option>
+	 <option value="モルタル">モルタル</option>
+	 </select></td><td><form action="#" method="post">
+	 <p><input type="text" id="depth4"></p></form></td></tr>
+	 
+	<tr><td>⑤</td>
+	 <td><select id="material5">
+	 <option value="木材">木材</option>
+	 <option value="コンクリート">コンクリート</option>
+	 <option value="グラスウール">グラスウール</option>
+	 <option value="空気層">空気層</option>
+	 <option value="モルタル">モルタル</option>
+	 </select></td><td><form action="#" method="post">
+	 <p><input type="text" id="depth5"></p></form></td></tr>
+	 
+	 </table>
+	<h2>1.2 室内外温度</h2>
+	<p>室温 = <nobr><form action="#" method="post"><input type="text" id="insidetemp"></form></nobr></p>
+	<p>外気温 = <nobr><form action="#" method="post"><input type="text" id="outsidetemp"></form></nobr></p>
+	
+	<input id="Button1" type="button" value="計算" onclick="exec();"/>
+	
+	<h2>2.1 外壁の熱貫流率計算結果</h2>
+    <div id="output1"></div>
+    <div id="output4"></div>
+    
+    
+    <h2>2.2 内外壁面温度計算結果</h2>
+    <div id="output2"></div>
+    <div id="output3"></div>
+    
+    
+    </p>
+ </body>
+</html>
